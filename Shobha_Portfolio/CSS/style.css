@@ -34,7 +34,7 @@
   .media .box {
   
     padding: 0%;
-    box-shadow: var(--box-shadow);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
     align-items: center;
   }
   
@@ -47,7 +47,7 @@
     left: 0;
     bottom: 0;
     right: 0;
-    background-color: var(--light-bg);
+    background-color: #333333;
     padding: 2rem;
     display: contents;
     align-items: center;
@@ -92,7 +92,6 @@
 
   color: rgb(0, 0, 0);
   position: relative;
-  background: transparent;
   }
   
   body::before {
@@ -111,15 +110,14 @@
     padding: 4rem 9%;
   }
   header {
-    background-color:	rgb(244, 244, 244);
+    background-color:rgb(244, 244, 244);
    color: rgb(0, 0, 160);
     text-align: center;
     padding: 10px;
-    
     top: 0;
     left: 0;
     right: 0;
-  
+  z-index: 100;
    
   }
   
@@ -146,26 +144,12 @@
    
   }
 
-/* marquee{
-    color: #110f88;
-    font-size: larger;
-    font-weight: bolder;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  }*/
   .navbar a {
     text-decoration: none;
     color: rgb(0, 0, 255);
     font-weight: bold;
   }
 
-  .idPic img{
-    max-width: 100%;
-    margin: 10px auto;
-    padding: 10px;
-    height: 35%;
-    width: 30%;
-    
-  }
 
   .main-content {
     max-width: 100%;
@@ -273,7 +257,7 @@
  
  .skills .skills-content
  {
-	 background-color: rgb(128, 128, 128);
+	 background-color:#D7DBDD ;
  }
  
  .resume .row{
@@ -479,6 +463,9 @@
 }
 /* certifications */
 
+.contact{
+	background-color: #CCD1D1 ;
+}
   .contact .section-title h2{
     color: #040404;
     text-align: center;
