@@ -1,5 +1,17 @@
 /* Media section  */
 
+* {
+   
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s linear;
+  }
+
 .media .col-xs-6 .col-sm-4 .box .video {
 
     height: 20rem;
@@ -54,12 +66,30 @@
     transform: translateY(50%);
   }
   
+  html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+  }
+
+  html::-webkit-scrollbar {
+    width: 1rem;
+  }
+  html::-webkit-scrollbar-track {
+    background: rgb(192, 192, 192);
+  }
+  html::-webkit-scrollbar-thumb {
+    background: #333333;
+  }
   
+ section {
+    padding: 5rem 9%;
+  }
   
   
   body {
     font-family: "Open Sans", sans-serif;
-  background-color: #040404;
+
   color: rgb(0, 0, 0);
   position: relative;
   background: transparent;
@@ -68,7 +98,7 @@
   body::before {
   content: "";
   position: fixed;
-  background: #040404 url("../img/back1.jpg") top right no-repeat;
+ 
   background-size: cover;
   left: 0;
   right: 0;
@@ -234,16 +264,20 @@
   }
   
   .skills h2 {
-    color: #f7f2f2;
+    color: rgb(0, 0, 0);
     text-align: center;
     
     font-style: italic;
     font-weight: bolder;
   }
  
- .skills
+ .skills .skills-content
  {
-	 background-color: rgb(216, 216, 216);
+	 background-color: rgb(128, 128, 128);
+ }
+ 
+ .resume .row{
+	 background-color: darkgrey;
  }
   .resume .resume-title {
     font-size: 26px;
@@ -252,7 +286,7 @@
     margin-bottom: 20px;
     color: #fff;
   }
-  
+ 
   .resume .resume-item {
     padding: 0 0 20px 20px;
     margin-top: -2px;
@@ -325,30 +359,125 @@
     text-align: center;
   }
 
-  .project .icon-box {
-    text-align: center;
-    background: dimgray;
-    padding: 80px 20px;
-    transition: all ease-in-out 0.3s;
-  }
-  .project h2{
-    color: #040404;
-    text-align: center;
-    
-  }
+  /* Certifications */
+.certificate .box-container .box .image {
+  height: 20rem;
+  overflow: hidden;
+  position: relative;
+}
 
-  .project p{
-    color: #040404;
-    text-align: center;
-    
-  }
+.certificate .box-container .box .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
 
-  .contact .info-box {
-    color: #0c0c0c;
-    padding: 20px;
-    width: 100%;
-    background:darkslategrey;
-  }
+.certificate .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 4rem;
+}
+
+.certificate .box-container .box {
+  background-color: #333333;
+  padding: 1rem;
+  box-shadow:  0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.certificate .box-container .box:hover .image img {
+  transform: scale(1.2);
+}
+
+.certificate .box-container .box .image .content {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color:  #333333;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(100%);
+}
+
+.certificate .box-container .box .image .content h2 {
+  font-size: 2rem;
+  color: #fff;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+
+.certificate .box-container .box:hover .image .content {
+  transform: translateY(0);
+}
+/* certifications */
+
+/* project */
+.project h1{
+	color: rgb(0, 0, 0);
+	text-align: center;
+}
+.project .box-container .box .image {
+  height: 20rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.project .box-container .box  p {
+  color: #ababab;
+  margin-bottom: 2rem;
+  font-size: 1.3 rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.3;
+  text-transform: none;
+}
+.project .box-container .box .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 4rem;
+}
+
+.project .box-container .box {
+  background-color: #333333;
+  padding: 1rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.project .box-container .box:hover .image img {
+  transform: scale(1.2);
+}
+
+.project .box-container .box .image .content {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color:  #333333;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(100%);
+}
+
+.project .box-container .box .image .content h2 {
+  font-size: 2rem;
+  color: var(--white);
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+
+.project .box-container .box:hover .image .content {
+  transform: translateY(0);
+}
+/* certifications */
 
   .contact .section-title h2{
     color: #040404;
