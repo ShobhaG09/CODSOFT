@@ -1,7 +1,7 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-image: url("../img/back1.jpg");
-    display: flex;
+    background-image: url("../img/back2.jpg");
+    display: grid;
     align-items: center;
     justify-content: center;
     height: 100vh;
