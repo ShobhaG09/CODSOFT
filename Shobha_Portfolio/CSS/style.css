@@ -58,14 +58,25 @@
   
   
   body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background:	rgb(225, 225, 225);
-  
-    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+  background-color: #040404;
+  color: rgb(0, 0, 0);
+  position: relative;
+  background: transparent;
   }
   
+  body::before {
+  content: "";
+  position: fixed;
+  background: #040404 url("../img/back1.jpg") top right no-repeat;
+  background-size: cover;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  z-index: -1;
+}
+
   section {
     padding: 4rem 9%;
   }
@@ -74,12 +85,12 @@
    color: rgb(0, 0, 160);
     text-align: center;
     padding: 10px;
-    position: fixed;
+    
     top: 0;
     left: 0;
     right: 0;
   
-    z-index: 100;
+   
   }
   
   
@@ -141,33 +152,42 @@
   /* about */
 .about .box-container .box .image {
     height: 100%;
-    overflow: hidden;
+    overflow:auto;
+    
   }
   
   .about .box-container .box .image img {
     width: 60%;
-    height: 60%;
+    height: 100%;
     object-fit: cover;
   }
   
   .about .box-container {
+	
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 0.5fr));
+    gap: 4rem;
   
   }
   .about .box-container{
     background-color: rgb(237, 237, 237);
+    
   }
   .about .box-container .box p {
-    color: rgb(1, 113, 180);
-    margin-bottom: 2rem;
-    font-size: 1.0rem;
+    color: rgb(0, 0, 128);
+    font-family:'Times New Roman', Times, serif ;
+    margin-bottom: 5rem;
+    font-size: 1.2rem;
     letter-spacing: 0.2rem;
     line-height: 2.0;
     text-transform: none;
+	padding: 20px;
   }
-  
+  .about h1{
+	  font-style: italic;
+	  color: #110f88;
+	  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  }
   
   .about .btn{
     background-color: yellow;
@@ -187,7 +207,7 @@
     height: 60px;
     display: block;
     background: none;
-    border-radius: 0;
+    border-radius: 2;
   }
   
   .skills .progress .skill {
@@ -205,16 +225,12 @@
     float: right;
     font-style: normal;
   }
-  
-  .skills .progress-bar-wrap {
-    background: rgba(249, 245, 245, 0.2);
-  }
-  
+ 
   .skills .progress-bar {
-    width: 2px;
+    width: 3px;
     height: 10px;
     transition: 0.9s;
-    background-color: #1f025e;
+    
   }
   
   .skills h2 {
@@ -224,10 +240,11 @@
     font-style: italic;
     font-weight: bolder;
   }
-  .skills{
-    background-color: #5f5d5d;
-  }
-
+ 
+ .skills
+ {
+	 background-color: rgb(216, 216, 216);
+ }
   .resume .resume-title {
     font-size: 26px;
     font-weight: 700;
@@ -369,3 +386,4 @@ footer {
     width: 100%;
     /* position: fixed; */
   }
+  
