@@ -252,20 +252,26 @@
     font-weight: bolder;
   }
  
- .skills .skills-content
+ .skills .row 
  {
-	 background-color:#D7DBDD ;
+	background-color:rgb(128, 128, 128);
+  	padding: 1rem;
+	box-shadow:  0 0.5rem 1rem rgba(0, 0, 0, 0.1);
  }
  
- .resume .container{
-	 background-color: darkgrey;
+ .resume {
+
+	 background-color:rgb(128, 128, 128);
+  padding: 1rem;
+  
  }
   .resume .resume-title {
     font-size: 26px;
     font-weight: 700;
     margin-top: 20px;
     margin-bottom: 20px;
-    color: #fff;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
   }
  
   .resume .resume-item {
@@ -273,6 +279,9 @@
     margin-top: -2px;
     border-left: 2px solid rgba(255, 255, 255, 0.2);
     position: relative;
+    font-size: 1rem;
+  	color: #fff;
+ 
   }
   
   .resume .resume-item h4 {
@@ -280,8 +289,8 @@
     font-size: 18px;
     font-weight: 600;
     text-transform: uppercase;
-    font-family: "Poppins", sans-serif;
-    color:#800000;
+   
+    color:rgb(255, 255, 0);
     margin-bottom: 10px;
   }
   
@@ -295,12 +304,12 @@
   }
   .resume .container .section-title  h2 {
     text-align: center;
-    color: #040404;
+    color: rgb(255, 255, 255);
    
   }
   .resume .container .section-title  p {
     text-align: center;
-    color: #040404;
+    color: rgb(255, 255, 255);
    
   }
   .resume .resume-item ul {
@@ -323,8 +332,8 @@
     border-radius: 50px;
     left: -9px;
     top: 0;
-    background: #800000;
-    border: 2px solid #800000;
+    background: rgb(255, 255, 128);
+    border: 2px solid rgb(255, 255, 128);
   }
   
 .resume .btn{
@@ -360,9 +369,9 @@
 }
 
 .certificate .box-container .box {
-  background-color: #333333;
+  background-color: rgb(128, 128, 128);
   padding: 1rem;
-  box-shadow:  0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  box-shadow:  0 0.5rem 1rem rgb(0, 0, 0);
 }
 
 .certificate .box-container .box:hover .image img {
@@ -426,7 +435,7 @@
 }
 
 .project .box-container .box {
-  background-color: #333333;
+  background-color:rgb(128, 128, 128);
   padding: 0.5rem;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
